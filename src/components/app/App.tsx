@@ -1,10 +1,12 @@
 import { Typography } from '@mui/material'
-import React from 'react'
+import styles from './App.module.scss';
+import { Card } from '../card';
 
 export const App = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <Typography gutterBottom variant='h2'>Profile Card</Typography>
+      <Card />
     </main>
   )
 }

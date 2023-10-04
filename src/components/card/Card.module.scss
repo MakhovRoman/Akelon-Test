@@ -1,0 +1,7 @@
+@import "@styles/index";
+
+.card {
+  @include set-size(350px, 500px);
+  @extend %flex-column;
+  align-items: center;
+}

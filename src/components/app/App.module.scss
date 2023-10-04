@@ -1,0 +1,8 @@
+@import '@styles/index';
+
+.main {
+  @extend %flex-column;
+  @extend %full-screen;
+  justify-content: center;
+  align-items: center;
+}
