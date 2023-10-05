@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:scss": "stylelint --fix --cache --cache-location \"node_modules/stylelint/.stylelintcache\" --ignore-path .gitignore \"{**/*,*}.{css,scss}\"",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,7 +16,11 @@
     "@types/node": "^20.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "stylelint": "^15.10.3",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-scss": "^5.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

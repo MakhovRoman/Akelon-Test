@@ -1,10 +1,12 @@
 @import "@styles/index";
 
 .card {
-  @include set-size(400px, "fit-content");
   @extend %flex-column;
+
+  @include set-size(400px, "fit-content");
+
   align-items: center;
   padding: 30px;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
 }
