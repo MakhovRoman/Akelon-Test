@@ -8,5 +8,5 @@ export const conditionLocalUserData = (localData: UserLocalData, param: UserLoca
 }
 
 export const conditionLocalCityData = (localData: string | null) => {
-  return localData || Object.keys(mockAPI.getCities())[0]
+  return localData || Object.values(mockAPI.getCities())[0]
 }
