@@ -31,6 +31,7 @@ export const UserAvatar = () => {
   // remove listener when component will unmount
   useEffect(() => {
     return reader.removeEventListener('load', handleLoad)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
