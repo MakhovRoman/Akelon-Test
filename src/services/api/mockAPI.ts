@@ -1,6 +1,7 @@
-import { getData } from "@/utils/getData"
+import user from '../../mock/user.json'
+import cities from '../../mock/cities.json'
 
 export const mockAPI = {
-  getUser: async () => await getData('../mock/user.json'),
-  getCities: async () => await getData('../mock/cities.json')
+  getUser: () => user,
+  getCities: () => cities,
 }
